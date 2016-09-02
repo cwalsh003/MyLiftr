@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A90E8CB1D79B61300913CE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A90E8CA1D79B61300913CE4 /* AppDelegate.swift */; };
+		6A90E8CD1D79B61300913CE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A90E8CC1D79B61300913CE4 /* ViewController.swift */; };
+		6A90E8D01D79B61300913CE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A90E8CE1D79B61300913CE4 /* Main.storyboard */; };
+		6A90E8D21D79B61300913CE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A90E8D11D79B61300913CE4 /* Assets.xcassets */; };
+		6A90E8D51D79B61300913CE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A90E8D31D79B61300913CE4 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6A90E8C71D79B61300913CE4 /* MyLiftr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLiftr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A90E8CA1D79B61300913CE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6A90E8CC1D79B61300913CE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6A90E8CF1D79B61300913CE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6A90E8D11D79B61300913CE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A90E8D41D79B61300913CE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6A90E8D61D79B61300913CE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A90E8C41D79B61300913CE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A90E8BE1D79B61300913CE4 = {
+			isa = PBXGroup;
+			children = (
+				6A90E8C91D79B61300913CE4 /* MyLiftr */,
+				6A90E8C81D79B61300913CE4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6A90E8C81D79B61300913CE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A90E8C71D79B61300913CE4 /* MyLiftr.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A90E8C91D79B61300913CE4 /* MyLiftr */ = {
+			isa = PBXGroup;
+			children = (
+				6A90E8CA1D79B61300913CE4 /* AppDelegate.swift */,
+				6A90E8CC1D79B61300913CE4 /* ViewController.swift */,
+				6A90E8CE1D79B61300913CE4 /* Main.storyboard */,
+				6A90E8D11D79B61300913CE4 /* Assets.xcassets */,
+				6A90E8D31D79B61300913CE4 /* LaunchScreen.storyboard */,
+				6A90E8D61D79B61300913CE4 /* Info.plist */,
+			);
+			path = MyLiftr;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A90E8C61D79B61300913CE4 /* MyLiftr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A90E8D91D79B61300913CE4 /* Build configuration list for PBXNativeTarget "MyLiftr" */;
+			buildPhases = (
+				6A90E8C31D79B61300913CE4 /* Sources */,
+				6A90E8C41D79B61300913CE4 /* Frameworks */,
+				6A90E8C51D79B61300913CE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyLiftr;
+			productName = MyLiftr;
+			productReference = 6A90E8C71D79B61300913CE4 /* MyLiftr.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A90E8BF1D79B61300913CE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Colin Walsh";
+				TargetAttributes = {
+					6A90E8C61D79B61300913CE4 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 6A90E8C21D79B61300913CE4 /* Build configuration list for PBXProject "MyLiftr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6A90E8BE1D79B61300913CE4;
+			productRefGroup = 6A90E8C81D79B61300913CE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A90E8C61D79B61300913CE4 /* MyLiftr */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A90E8C51D79B61300913CE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A90E8D51D79B61300913CE4 /* LaunchScreen.storyboard in Resources */,
+				6A90E8D21D79B61300913CE4 /* Assets.xcassets in Resources */,
+				6A90E8D01D79B61300913CE4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A90E8C31D79B61300913CE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A90E8CD1D79B61300913CE4 /* ViewController.swift in Sources */,
+				6A90E8CB1D79B61300913CE4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6A90E8CE1D79B61300913CE4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A90E8CF1D79B61300913CE4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6A90E8D31D79B61300913CE4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A90E8D41D79B61300913CE4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6A90E8D71D79B61300913CE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6A90E8D81D79B61300913CE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6A90E8DA1D79B61300913CE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyLiftr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.StrawberryBox.MyLiftr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6A90E8DB1D79B61300913CE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyLiftr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.StrawberryBox.MyLiftr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A90E8C21D79B61300913CE4 /* Build configuration list for PBXProject "MyLiftr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A90E8D71D79B61300913CE4 /* Debug */,
+				6A90E8D81D79B61300913CE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A90E8D91D79B61300913CE4 /* Build configuration list for PBXNativeTarget "MyLiftr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A90E8DA1D79B61300913CE4 /* Debug */,
+				6A90E8DB1D79B61300913CE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6A90E8BF1D79B61300913CE4 /* Project object */;
+}
