@@ -7,21 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A3E91C81D7B3D0200860E93 /* NewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3E91C71D7B3D0200860E93 /* NewMessageController.swift */; };
+		6A3E91CC1D7BAA4000860E93 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3E91CB1D7BAA4000860E93 /* User.swift */; };
+		6A3E91CE1D7BB7BF00860E93 /* LoginController+handlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3E91CD1D7BB7BF00860E93 /* LoginController+handlers.swift */; };
+		6A3E91D11D7BBF3100860E93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A3E91D01D7BBF3100860E93 /* Assets.xcassets */; };
+		6A5C46451D8DB57600F4BD1B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5C46441D8DB57600F4BD1B /* Message.swift */; };
+		6A8E791A1D9055AF0076D1DA /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E79191D9055AF0076D1DA /* UserCell.swift */; };
 		6A90E8CB1D79B61300913CE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A90E8CA1D79B61300913CE4 /* AppDelegate.swift */; };
-		6A90E8CD1D79B61300913CE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A90E8CC1D79B61300913CE4 /* ViewController.swift */; };
+		6A90E8CD1D79B61300913CE4 /* MesagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A90E8CC1D79B61300913CE4 /* MesagesController.swift */; };
 		6A90E8D01D79B61300913CE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A90E8CE1D79B61300913CE4 /* Main.storyboard */; };
-		6A90E8D21D79B61300913CE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A90E8D11D79B61300913CE4 /* Assets.xcassets */; };
 		6A90E8D51D79B61300913CE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A90E8D31D79B61300913CE4 /* LaunchScreen.storyboard */; };
+		6A90E8DD1D79B8A900913CE4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A90E8DC1D79B8A900913CE4 /* GoogleService-Info.plist */; };
+		6A90E8E81D7A541E00913CE4 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A90E8E71D7A541E00913CE4 /* LoginController.swift */; };
+		6ADDE4DC1D7F80FB007A5F54 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADDE4DB1D7F80FB007A5F54 /* Extensions.swift */; };
+		6ADDE4DE1D7F8C00007A5F54 /* ChatLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADDE4DD1D7F8C00007A5F54 /* ChatLogController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B5606C2BEB5FDFB67E8FB70 /* Pods-MyLiftr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyLiftr.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyLiftr/Pods-MyLiftr.release.xcconfig"; sourceTree = "<group>"; };
+		4943A9E9EDC872D07E281196 /* Pods-MyLiftr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyLiftr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyLiftr/Pods-MyLiftr.debug.xcconfig"; sourceTree = "<group>"; };
+		681C482E85F9475BD61B4399 /* Pods_MyLiftr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyLiftr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A3E91C71D7B3D0200860E93 /* NewMessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageController.swift; sourceTree = "<group>"; };
+		6A3E91CB1D7BAA4000860E93 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6A3E91CD1D7BB7BF00860E93 /* LoginController+handlers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginController+handlers.swift"; sourceTree = "<group>"; };
+		6A3E91D01D7BBF3100860E93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A5C46441D8DB57600F4BD1B /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		6A8E79191D9055AF0076D1DA /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		6A8E791B1D90921E0076D1DA /* MyLiftr.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyLiftr.entitlements; sourceTree = "<group>"; };
 		6A90E8C71D79B61300913CE4 /* MyLiftr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLiftr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A90E8CA1D79B61300913CE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6A90E8CC1D79B61300913CE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6A90E8CC1D79B61300913CE4 /* MesagesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MesagesController.swift; sourceTree = "<group>"; };
 		6A90E8CF1D79B61300913CE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6A90E8D11D79B61300913CE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A90E8D41D79B61300913CE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A90E8D61D79B61300913CE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A90E8DC1D79B8A900913CE4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6A90E8E71D7A541E00913CE4 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		6ADDE4DB1D7F80FB007A5F54 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		6ADDE4DD1D7F8C00007A5F54 /* ChatLogController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatLogController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,11 +57,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27ECC1AF05DAE2748991D82C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4943A9E9EDC872D07E281196 /* Pods-MyLiftr.debug.xcconfig */,
+				3B5606C2BEB5FDFB67E8FB70 /* Pods-MyLiftr.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6A3E91CA1D7BAA2600860E93 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				6A3E91CB1D7BAA4000860E93 /* User.swift */,
+				6A5C46441D8DB57600F4BD1B /* Message.swift */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		6A8E79181D90559C0076D1DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6A8E79191D9055AF0076D1DA /* UserCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		6A90E8BE1D79B61300913CE4 = {
 			isa = PBXGroup;
 			children = (
 				6A90E8C91D79B61300913CE4 /* MyLiftr */,
 				6A90E8C81D79B61300913CE4 /* Products */,
+				27ECC1AF05DAE2748991D82C /* Pods */,
+				7609F178C000A40249063F56 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +104,47 @@
 		6A90E8C91D79B61300913CE4 /* MyLiftr */ = {
 			isa = PBXGroup;
 			children = (
+				6A8E791B1D90921E0076D1DA /* MyLiftr.entitlements */,
+				6A8E79181D90559C0076D1DA /* View */,
+				6ADDE4DA1D7F80EC007A5F54 /* helpers */,
+				6A3E91D01D7BBF3100860E93 /* Assets.xcassets */,
+				6A3E91CA1D7BAA2600860E93 /* models */,
 				6A90E8CA1D79B61300913CE4 /* AppDelegate.swift */,
-				6A90E8CC1D79B61300913CE4 /* ViewController.swift */,
+				6A90E8E61D7A53E600913CE4 /* Controllers */,
 				6A90E8CE1D79B61300913CE4 /* Main.storyboard */,
-				6A90E8D11D79B61300913CE4 /* Assets.xcassets */,
 				6A90E8D31D79B61300913CE4 /* LaunchScreen.storyboard */,
 				6A90E8D61D79B61300913CE4 /* Info.plist */,
+				6A90E8DC1D79B8A900913CE4 /* GoogleService-Info.plist */,
 			);
 			path = MyLiftr;
+			sourceTree = "<group>";
+		};
+		6A90E8E61D7A53E600913CE4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6A90E8CC1D79B61300913CE4 /* MesagesController.swift */,
+				6A90E8E71D7A541E00913CE4 /* LoginController.swift */,
+				6A3E91C71D7B3D0200860E93 /* NewMessageController.swift */,
+				6A3E91CD1D7BB7BF00860E93 /* LoginController+handlers.swift */,
+				6ADDE4DD1D7F8C00007A5F54 /* ChatLogController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6ADDE4DA1D7F80EC007A5F54 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6ADDE4DB1D7F80FB007A5F54 /* Extensions.swift */,
+			);
+			name = helpers;
+			sourceTree = "<group>";
+		};
+		7609F178C000A40249063F56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				681C482E85F9475BD61B4399 /* Pods_MyLiftr.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +154,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A90E8D91D79B61300913CE4 /* Build configuration list for PBXNativeTarget "MyLiftr" */;
 			buildPhases = (
+				0E401203DBB9531C56009671 /* Check Pods Manifest.lock */,
 				6A90E8C31D79B61300913CE4 /* Sources */,
 				6A90E8C41D79B61300913CE4 /* Frameworks */,
 				6A90E8C51D79B61300913CE4 /* Resources */,
+				744935CE3703D235FCF37F81 /* Embed Pods Frameworks */,
+				1EB9FDF826C8C183D5FFBCAA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +182,16 @@
 				TargetAttributes = {
 					6A90E8C61D79B61300913CE4 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = NFFT3EYJ29;
+						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -122,21 +218,78 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A90E8DD1D79B8A900913CE4 /* GoogleService-Info.plist in Resources */,
 				6A90E8D51D79B61300913CE4 /* LaunchScreen.storyboard in Resources */,
-				6A90E8D21D79B61300913CE4 /* Assets.xcassets in Resources */,
+				6A3E91D11D7BBF3100860E93 /* Assets.xcassets in Resources */,
 				6A90E8D01D79B61300913CE4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E401203DBB9531C56009671 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1EB9FDF826C8C183D5FFBCAA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyLiftr/Pods-MyLiftr-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		744935CE3703D235FCF37F81 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyLiftr/Pods-MyLiftr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6A90E8C31D79B61300913CE4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A90E8CD1D79B61300913CE4 /* ViewController.swift in Sources */,
+				6ADDE4DE1D7F8C00007A5F54 /* ChatLogController.swift in Sources */,
+				6A3E91C81D7B3D0200860E93 /* NewMessageController.swift in Sources */,
+				6A90E8CD1D79B61300913CE4 /* MesagesController.swift in Sources */,
+				6A3E91CE1D7BB7BF00860E93 /* LoginController+handlers.swift in Sources */,
+				6A90E8E81D7A541E00913CE4 /* LoginController.swift in Sources */,
+				6A5C46451D8DB57600F4BD1B /* Message.swift in Sources */,
+				6A3E91CC1D7BAA4000860E93 /* User.swift in Sources */,
 				6A90E8CB1D79B61300913CE4 /* AppDelegate.swift in Sources */,
+				6A8E791A1D9055AF0076D1DA /* UserCell.swift in Sources */,
+				6ADDE4DC1D7F80FB007A5F54 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,23 +400,35 @@
 		};
 		6A90E8DA1D79B61300913CE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4943A9E9EDC872D07E281196 /* Pods-MyLiftr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyLiftr/MyLiftr.entitlements;
+				DEVELOPMENT_TEAM = NFFT3EYJ29;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = MyLiftr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.StrawberryBox.MyLiftr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
 		6A90E8DB1D79B61300913CE4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B5606C2BEB5FDFB67E8FB70 /* Pods-MyLiftr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyLiftr/MyLiftr.entitlements;
+				DEVELOPMENT_TEAM = NFFT3EYJ29;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = MyLiftr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.StrawberryBox.MyLiftr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -286,6 +451,7 @@
 				6A90E8DB1D79B61300913CE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -4,18 +4,29 @@
 //
 //  Created by Colin Walsh on 9/2/16.
 //  Copyright © 2016 Colin Walsh. All rights reserved.
-//
+
 
 import UIKit
+import Firebase
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+    
+    func application(application: UIApplication, didFinishLaunchingWithOptions
+        launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        FIRApp.configure()
+        
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window?.makeKeyAndVisible()
+        
+        window?.rootViewController =
+            UINavigationController(rootViewController: MessagesController())
+        
         return true
     }
 

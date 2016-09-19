@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,13 +18,34 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="269" misplaced="YES" image="photo-1465479423260-c4afc24172c6" translatesAutoresizingMaskIntoConstraints="NO" id="kgi-X3-giL">
+                                <rect key="frame" x="-58" y="0.0" width="600" height="600"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kgi-X3-giL" secondAttribute="height" multiplier="1:1" id="DnV-zf-np8"/>
+                                    <constraint firstAttribute="height" constant="600" id="go6-Jq-czx"/>
+                                    <constraint firstAttribute="width" constant="600" id="x0D-dN-ZJn"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kgi-X3-giL" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="-59" id="DJP-mk-dbF"/>
+                            <constraint firstItem="kgi-X3-giL" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottomMargin" id="ECx-6E-CxT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kgi-X3-giL" secondAttribute="trailing" constant="38" id="Pez-jp-lvN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kgi-X3-giL" secondAttribute="trailing" constant="38" id="Tt7-mA-Ccc"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="kgi-X3-giL" secondAttribute="bottom" constant="59" id="aRZ-5P-5t9"/>
+                            <constraint firstItem="kgi-X3-giL" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-78" id="eT4-P2-zrm"/>
+                            <constraint firstItem="kgi-X3-giL" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="f6u-GT-B73"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="163" y="306"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="photo-1465479423260-c4afc24172c6" width="3756" height="3854"/>
+    </resources>
 </document>
