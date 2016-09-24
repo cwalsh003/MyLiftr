@@ -35,7 +35,7 @@ class UserCell: UITableViewCell {
         
    
         
-        if let id = message?.charPartnerId() {
+        if let id = message?.chatPartnerId() {
             let ref = FIRDatabase.database().reference().child("users").child(id)
             
             ref.observeSingleEventOfType(.Value, withBlock: { (snapshot) in

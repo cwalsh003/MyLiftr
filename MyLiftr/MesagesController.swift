@@ -54,8 +54,8 @@ class MessagesController: UITableViewController {
                         message.setValuesForKeysWithDictionary(dictionary)
                         
                         
-                        if let toId = message.toId {
-                            self.messagesDictionary[toId] = message
+                        if let chatPartnerId = message.chatPartnerId() {
+                            self.messagesDictionary[chatPartnerId] = message
                             
                             self.messages = Array(self.messagesDictionary.values)
                             self.messages.sortInPlace({ (message1, message2) -> Bool in
@@ -128,11 +128,11 @@ class MessagesController: UITableViewController {
    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     let message = messages[indexPath.row]
     
-    guard let charPartnerId = message.charPartnerId() else{
+    guard let chatPartnerId = message.chatPartnerId() else{
         return
     }
     
-    let ref = FIRDatabase.database().reference().child("users").child(charPartnerId)
+    let ref = FIRDatabase.database().reference().child("users").child(chatPartnerId)
     
     ref.observeEventType(.Value, withBlock: {(snapshot) in
         
@@ -140,7 +140,7 @@ class MessagesController: UITableViewController {
         
         let user = User()
         
-        user.id = charPartnerId
+        user.id = chatPartnerId
         
         user.setValuesForKeysWithDictionary(dictionary)
         self.showChatController(user)

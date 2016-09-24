@@ -43,7 +43,7 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate, UIColl
                 let message = Message()
                     message.setValuesForKeysWithDictionary(dictionary)
                 
-                if message.charPartnerId() == self.user?.id{
+                if message.chatPartnerId() == self.user?.id{
                     self.messages.append(message)
                     
                     dispatch_async(dispatch_get_main_queue(), {
@@ -74,8 +74,11 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate, UIColl
     override func viewDidLoad() {
         super.viewDidLoad()
     
-      
         
+        collectionView?.contentInset = UIEdgeInsets(top: 8, left: 0, bottom: 58, right: 0)
+        collectionView?.scrollIndicatorInsets = UIEdgeInsets(top: 0, left: 0, bottom: 50, right: 0)
+      
+        collectionView?.alwaysBounceVertical = true
         collectionView?.backgroundColor = UIColor.whiteColor()
         collectionView?.registerClass(ChatMessageCell.self, forCellWithReuseIdentifier: cellId)
         
@@ -94,12 +97,34 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate, UIColl
         
         cell.textView.text = message.text
         
+        cell.bubbleWidthAnchor?.constant = estimateFrameForText(message.text!).width + 32
+        
         return cell
     }
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height: 80)
+    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+        collectionView?.collectionViewLayout.invalidateLayout()
     }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        
+        var height: CGFloat = 80
+        
+        //get estimated height somehow????
+        if let text = messages[indexPath.item].text {
+            height = estimateFrameForText(text).height + 20
+        }
+        
+        return CGSize(width: view.frame.width, height: height)
+    }
+    
+    private func estimateFrameForText(text: String) -> CGRect {
+        let size = CGSize(width: 200, height: 1000)
+        let options = NSStringDrawingOptions.UsesFontLeading.union(.UsesLineFragmentOrigin)
+        return NSString(string: text).boundingRectWithSize(size, options: options, attributes: [NSFontAttributeName: UIFont.systemFontOfSize(16)], context: nil)
+    }
+    
+   
     func setupInputComponents(){
         let containerView = UIView()
         
