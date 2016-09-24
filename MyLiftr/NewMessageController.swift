@@ -53,6 +53,8 @@ class NewMessageController: UITableViewController {
     func handleCancel(){
         dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return users.count
