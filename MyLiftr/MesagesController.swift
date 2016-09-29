@@ -63,47 +63,26 @@ class MessagesController: UITableViewController {
                                 return message1.timestamp?.intValue > message2.timestamp?.intValue
                             })
                         }
-                        
-                        dispatch_async(dispatch_get_main_queue(), {
-                            self.tableView.reloadData()
-                        })
+                        self.timer?.invalidate()
+                       self.timer =  NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: #selector(self.handleReloadTable), userInfo: nil, repeats: false)
+                     
                     }
                 }, withCancelBlock: nil)
             
             }, withCancelBlock: nil)
     }
     
+    var timer: NSTimer?
     
-    func observeMessage(){
-        let ref = FIRDatabase.database().reference().child("messages")
-        ref.observeEventType(.ChildAdded, withBlock: {(snapshot) in
+    func handleReloadTable(){
+        
+        dispatch_async(dispatch_get_main_queue(), {
             
-            
-            if let dictionary = snapshot.value as? [String: AnyObject]{
-                 let message = Message()
-                message.setValuesForKeysWithDictionary(dictionary)
-                self.messages.append(message)
-                
-                if let toId = message.toId {
-                    self.messagesDictionary[toId] = message
-                    
-                    self.messages = Array(self.messagesDictionary.values)
-                    self.messages.sortInPlace({ (message1, message2) -> Bool in
-                        
-                        return message1.timestamp?.intValue > message2.timestamp?.intValue
-                    })
-                }
-                
-                dispatch_async(dispatch_get_main_queue(), {
-                self.tableView.reloadData()
-                })
-            }
-            
-           
-            
-        }, withCancelBlock: nil)
+            self.tableView.reloadData()
+        })
     }
     
+
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return messages.count
