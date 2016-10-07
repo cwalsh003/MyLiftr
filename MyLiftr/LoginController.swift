@@ -126,16 +126,23 @@ class LoginController: UIViewController {
         inputContainerHeightViewAnchor?.constant = loginRegisterSegmentedControl.selectedSegmentIndex == 0 ? 100 : 150
         
        nameTextFieldHeightViewAnchor?.active = false
-        nameTextFieldHeightViewAnchor = nameTextField.heightAnchor.constraintEqualToAnchor(inputContainerView.heightAnchor, multiplier: loginRegisterSegmentedControl.selectedSegmentIndex == 0 ? 0 : 1/3)
+        nameTextFieldHeightViewAnchor = nameTextField.heightAnchor.constraintEqualToAnchor(inputContainerView.heightAnchor, multiplier: loginRegisterSegmentedControl.selectedSegmentIndex == 0 ? 0.00 : 1/3)
+        if(loginRegisterSegmentedControl.selectedSegmentIndex == 0){
+            nameTextField.placeholder = ""
+        }else{
+            nameTextField.placeholder = "Name"
+        }
+        print(loginRegisterSegmentedControl.selectedSegmentIndex)
         nameTextFieldHeightViewAnchor?.active = true
         
         
+        
         emailTextHeightViewAnchor?.active = false
-        emailTextHeightViewAnchor = emailTextField.heightAnchor.constraintEqualToAnchor(inputContainerView.heightAnchor, multiplier: loginRegisterSegmentedControl.selectedSegmentIndex == 0 ? 0.5 : 1/3)
+        emailTextHeightViewAnchor = emailTextField.heightAnchor.constraintEqualToAnchor(inputContainerView.heightAnchor, multiplier: loginRegisterSegmentedControl.selectedSegmentIndex == 0 ? 1/2 : 1/3)
         emailTextHeightViewAnchor?.active = true
         
         passwordTextHeightViewAnchor?.active = false
-        passwordTextHeightViewAnchor = passwordTextField.heightAnchor.constraintEqualToAnchor(inputContainerView.heightAnchor, multiplier: loginRegisterSegmentedControl.selectedSegmentIndex == 0 ? 0.5 : 1/3)
+        passwordTextHeightViewAnchor = passwordTextField.heightAnchor.constraintEqualToAnchor(inputContainerView.heightAnchor, multiplier: loginRegisterSegmentedControl.selectedSegmentIndex == 0 ? 1/2 : 1/3)
         passwordTextHeightViewAnchor?.active = true
         
     }
@@ -186,6 +193,7 @@ class LoginController: UIViewController {
     
     var inputContainerHeightViewAnchor: NSLayoutConstraint?
     var nameTextFieldHeightViewAnchor: NSLayoutConstraint?
+    var nameTextFieldTopAnchor: NSLayoutConstraint?
     var emailTextHeightViewAnchor: NSLayoutConstraint?
      var passwordTextHeightViewAnchor: NSLayoutConstraint?
     
@@ -213,8 +221,11 @@ class LoginController: UIViewController {
         //x, y, width, height constraints
         
         nameTextField.leftAnchor.constraintEqualToAnchor(inputContainerView.leftAnchor,constant: 12).active = true
-        nameTextField.topAnchor.constraintEqualToAnchor(inputContainerView.topAnchor).active = true
+        
         nameTextField.widthAnchor.constraintEqualToAnchor(inputContainerView.widthAnchor).active = true
+        
+        nameTextFieldTopAnchor = nameTextField.topAnchor.constraintEqualToAnchor(inputContainerView.topAnchor)
+        nameTextFieldTopAnchor?.active = true
         
         nameTextFieldHeightViewAnchor = nameTextField.heightAnchor.constraintEqualToAnchor(inputContainerView.heightAnchor, multiplier: 1/3)
             

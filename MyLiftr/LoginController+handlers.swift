@@ -11,10 +11,6 @@ import Firebase
 
 
 extension LoginController: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
-    
-    
-    
-    
     func handleRegister(){
         
         guard let email = emailTextField.text, password = passwordTextField.text, name = nameTextField.text
